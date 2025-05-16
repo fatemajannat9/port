@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #007acc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #007acc;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007acc;
+}
+
+/* Blog Slider */
+#blogs {
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 10px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 6); /* depends on number of slides */
+  animation: scroll 15s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  color: #007acc;
+}
+
+.slide a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
